@@ -1,0 +1,18 @@
+{
+  "name": "Onitzz/Onitzz.github.io",
+  "homepage": "https://github.com/Onitzz/Onitzz.github.io",
+  "authors": [
+    "OnitZ <benjamin.soufflet.info@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "UNLICENSED",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

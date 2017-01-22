@@ -1,0 +1,406 @@
+/*
+Couleur:
+"Jaune" 		 => #ec8d07 => rgba(236, 141, 7, 1)
+"Bleu foncé" => #061015 => rgba(6, 16, 21, 1)
+"Mauve clair"=> #323659	=> rgba(50, 54, 89, 1)
+*/
+
+@font-face {
+    font-family: "Roboto";
+    src: url('font/roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: "thryn";
+    src: url('font/thryn___.ttf');
+}
+
+@font-face {
+		font-family: "IsWasted";
+		src: url('font/IsWasted.ttf');
+}
+
+* {
+		margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body, #acceuil, ul, nav{
+	width: 100%;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	background: #ffffff url("../image/swirl_pattern.png") center repeat fixed;
+	height: 100%;
+}
+
+h1{
+	font-size: 25px;
+	font-family: Roboto, Arial, sans-serif;
+	color: rgba(6, 16, 21, 1);
+	left: 150px;
+	letter-spacing: 3px;
+}
+
+h2{
+	font-size: 19px;
+	color: #ec8d07;
+	font-family: thryn, serif;
+	margin-bottom: 20px;
+}
+
+h3{
+	font-size: 16px;
+	color: rgba(6, 16, 21, 0.7);
+	font-family: thryn, serif;
+}
+
+h4{
+	font-size:12px;
+	color: rgba(6, 16, 21, 0.5);
+	font-family:thryn, serif;
+	margin-left:5px;
+}
+
+p{
+	font-size:15px;
+	color: rgba(6, 16, 21, 1);
+	font-family:thryn, serif;
+}
+
+div p{
+	margin-top: 5px;
+	margin-left: 10px;
+}
+
+section{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	width: 100%;
+}
+
+section li{
+	list-style: none;
+	font-size: 14px;
+	color: #333;
+	font-family: thryn, serif;
+	margin-left: 10px;
+}
+
+section > header{
+	border-bottom: 2px solid #ec8d07;
+	padding-left: 10%;
+	line-height: 60px;
+	height: 60px;
+}
+
+article{
+	background-color: white;
+	margin: auto;
+	padding: 20px;
+	padding-top: 30px;
+	padding-bottom: 50px;
+	width: 70%;
+}
+
+article::after,article::before{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+/* NAVIGATION */
+
+.nav{
+  height:
+}
+
+nav{
+	background-color: #061015;
+	width: 100%
+	height: 50px;
+	font-family: Roboto, Arial, sans-serif;
+	position: fixed;
+	top: 0;
+	z-index: 3;
+}
+
+nav ul{
+	text-align: center;
+	height: 100%;
+  margin-bottom: 0;
+}
+
+nav li{
+	display: inline-block;
+	height: 100%;
+	width: calc((100% / 7) - 4px);
+	line-height: 50px;
+}
+
+nav a{
+	text-decoration: none;
+	color: rgb(88, 93, 132);
+	font-size: 15px;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	letter-spacing: 2px;
+}
+
+nav a:hover{
+	font-weight: bold;
+	color: #ec8d07;
+  text-decoration: none;
+}
+
+
+/* ACCUEIL */
+
+
+#accueil{
+	background: rgb(6,16,21) url('image/image-fond-cover.jpg') left 0 no-repeat fixed;
+	position: relative;
+	top: 50px;
+	width: 100%;
+	height: calc(100% - 50px);
+}
+
+#fond{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+#cover{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#061015+0,061015+70,000000+100&1+42,0.92+57,0.73+72,0.46+86,0+100 */
+	background: -moz-linear-gradient(top, rgba(6,16,21,1) 0%, rgba(6,16,21,1) 42%, rgba(6,16,21,0.92) 57%, rgba(6,16,21,0.76) 70%, rgba(6,15,20,0.73) 72%, rgba(3,8,10,0.46) 86%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(6,16,21,1) 0%,rgba(6,16,21,1) 42%,rgba(6,16,21,0.92) 57%,rgba(6,16,21,0.76) 70%,rgba(6,15,20,0.73) 72%,rgba(3,8,10,0.46) 86%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(6,16,21,1) 0%,rgba(6,16,21,1) 42%,rgba(6,16,21,0.92) 57%,rgba(6,16,21,0.76) 70%,rgba(6,15,20,0.73) 72%,rgba(3,8,10,0.46) 86%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#061015', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+	z-index: 2;
+	vertical-align: top;
+}
+
+#titre{
+	width: 50%;
+	position: absolute;
+	top: 10%;
+	left: 49%;
+}
+
+#titre p{
+	color: rgb(50, 54, 89);
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 2vw;
+	float: right;
+	padding-right: 2%;
+}
+
+.jaune{
+	color: #ec8d07;
+}
+
+#font-title{
+	width: 100%;
+}
+
+#photo{
+	position: absolute;
+	width: 20%;
+	top: 10%;
+	left: 10%;
+	border-radius: 5%;
+}
+
+
+/* PROFIL */
+
+
+.dip,.exp{
+	float: left;
+	width: calc((100% / 3) - 60px);
+	margin: 0 30px;
+}
+
+
+/* APPRENTISSAGE */
+
+
+.dip li{
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 12px;
+	padding: 2px 3px;
+	border: 1px solid rgba(6, 16, 21, 0.3);
+	display: inline-block;
+	margin: 5px 0 0 0;
+	color: rgba(6, 16, 21, 0.5);
+}
+
+.dip li:hover{
+	background-color: #ec8d07;
+	color: rgba(6, 16, 21, 0.8);
+}
+
+
+/* EXPERIENCE */
+
+
+#section_experiencepro p{
+	text-align: justify;
+}
+
+#section_experiencepro span{
+	color: rgba(50, 54, 89,0.5);
+	font-size: 12px;
+	padding: 0 5px;
+}
+
+
+/* COMPETENCE */
+
+
+.comp{
+	background-color: white;
+	float: left;
+	width: calc((100% / 3) - 60px);
+	min-height: 150px;
+	vertical-align: top;
+	margin: 30px;
+	padding: 15px;
+	text-align: center;
+	border-left: 1px dashed rgb(50, 54, 89);
+	border-right: 1px dashed rgb(50, 54, 89);
+	border-radius: 10px;
+}
+
+.comp h3{
+	height: 35px;
+	line-height: 35px;
+	margin-bottom: 10px;
+	font-size: 1.3vw;
+}
+
+.comp li{
+	float: left;
+	width: calc(100% / 2);
+	margin: 5px 0 5px -5px;
+}
+
+.comp li img{
+	width: 32px;
+	height: 32px;
+}
+
+
+/* INTERET */
+
+
+#container-interet{
+	padding-top: 70px;
+}
+
+.interet{
+	display: inline-block;
+	margin-left: calc(( 55% / 6 ) - 4px);
+	margin-right: calc(( 55% / 6 ) - 4px);
+	width: 15%;
+	height: 150px;
+	vertical-align: top;
+	text-align: center;
+}
+
+
+/* CONTACT */
+
+
+#section_contact article{
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.col-contact{
+	width: 50%;
+	float: left;
+}
+
+input{
+	display: inline-block;
+	width: calc(100% - 40px);
+	height: 60px;
+	margin: 20px 20px;
+	padding: 0px 10px;
+	border: none;
+	border-radius: 2px;
+	box-shadow: 1px 1px 2px rgb(50, 54, 89);
+}
+
+textarea{
+	display: inline-block;
+	width: calc(100% - 40px);
+	height: 200px;
+	padding: 10px;
+	margin: 0 20px;
+	font-size: 14px;
+	border: none;
+	border-radius: 2px;
+	box-shadow: 1px 1px 2px rgb(50, 54, 89);
+}
+
+
+/* FOOTER */
+
+
+footer{
+	background-color: #061015;
+	position: absolute;
+	width: 100%;
+	height: 50px;
+}
+
+#twitter a{
+	position: absolute;
+	top: 9px;
+	left: calc(50% - 16px);
+	width: 32px;
+	height: 32px;
+	background-image: url('image/twittergrey.png');
+}
+
+#linkedin a{
+	position: absolute;
+	top: 9px;
+	left: calc(50% - 64px);
+	width: 32px;
+	height: 32px;
+	background-image: url('image/linkedingrey.png');
+}
+
+#github a{
+	position: absolute;
+	top: 9px;
+	right: calc(50% - 64px);
+	width: 32px;
+	height: 32px;
+	background-image: url('image/githubgrey.png');
+}
+
+#twitter a:hover{
+	background-image: url('image/twitter.png');
+}
+
+#linkedin a:hover{
+	background-image: url('image/linkedin.png');
+}
+
+#github a:hover{
+	background-image: url('image/github.png');
+}
