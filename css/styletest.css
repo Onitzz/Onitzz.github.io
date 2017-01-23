@@ -145,17 +145,20 @@ article {
   background-color: #ff3600;
   color: white; }
 
-#section_competence .comp {
-  border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.03);
-  box-shadow: 2px 4px 15px #dadada; }
-  #section_competence .comp h3 {
-    margin-bottom: 50px; }
-  #section_competence .comp img {
-    width: 50px; }
-  #section_competence .comp p {
-    margin-bottom: 40px;
-    font-family: "VT323", monospace; }
+#section_competence article {
+  background-color: transparent; }
+  #section_competence article h3 {
+    font-family: "Dosis", sans-serif; }
+  #section_competence article .comp {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 2px 4px 15px #dadada; }
+    #section_competence article .comp h3 {
+      margin-bottom: 50px; }
+    #section_competence article .comp img {
+      height: 50px; }
+    #section_competence article .comp p {
+      margin-bottom: 40px;
+      font-family: "VT323", monospace; }
 
 #section_passion {
   overflow: hidden; }
