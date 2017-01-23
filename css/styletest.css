@@ -153,7 +153,8 @@ article {
     font-family: "Dosis", sans-serif; }
   #section_competence article .comp {
     background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 2px 4px 15px #dadada; }
+    box-shadow: 2px 4px 15px #dadada;
+    margin-bottom: 30px; }
     #section_competence article .comp h3 {
       margin-bottom: 50px; }
     #section_competence article .comp img {
