@@ -35,11 +35,38 @@ body {
   #cover > div {
     height: 100%; }
 
-  #photo {
-    width: 250px;
-    margin-top: calc(50% - 125px);
-    margin-left: calc(50% - 125px);
-    border-radius: 100%; } }
+  #acphoto {
+    position: relative;
+    top: calc(50% - 75px);
+    left: calc(50% - 75px); }
+    #acphoto #photo {
+      width: 150px;
+      border-radius: 100%;
+      z-index: 4;
+      position: relative; }
+    #acphoto .reseau {
+      height: 32px;
+      width: 150px;
+      position: relative;
+      top: 61px;
+      left: -50px;
+      transform-origin: 100% 50%;
+      z-index: 5; }
+    #acphoto .github {
+      transform: rotate(90deg); }
+      #acphoto .github .bar {
+        height: 3px;
+        width: calc(100% - 64px);
+        background-color: red;
+        position: relative;
+        top: 50%;
+        left: 32px;
+        z-index: 3; }
+      #acphoto .github .bulle {
+        height: 100%;
+        width: 32px;
+        background-color: white;
+        border-radius: 100%; } }
 li {
   list-style: none; }
 
@@ -152,7 +179,7 @@ article {
   #section_competence article h3 {
     font-family: "Dosis", sans-serif; }
   #section_competence article .comp {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.6);
     box-shadow: 2px 4px 15px #dadada;
     margin-bottom: 30px; }
     #section_competence article .comp h3 {

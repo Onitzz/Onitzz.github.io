@@ -6,8 +6,35 @@
   #cover
     & > div
       height: 100%
-  #photo
-    width: 250px
-    margin-top: calc(50% - 125px)
-    margin-left: calc(50% - 125px)
-    border-radius: 100%
+  #acphoto
+    position: relative
+    top: calc(50% - 75px)
+    left: calc(50% - 75px)
+    #photo
+      width: 150px
+      border-radius: 100%
+      z-index: 4
+      position: relative
+    .reseau
+      height: 32px
+      width: 150px
+      position: relative
+      top: 61px
+      left: -50px
+      transform-origin: 100% 50%
+      z-index: 5
+    .github
+      transform: rotate(90deg)
+      .bar
+        height: 3px
+        width: calc(100% - 64px)
+        background-color: red
+        position: relative
+        top: 50%
+        left: 32px
+        z-index: 3
+      .bulle
+        height: 100%
+        width: 32px
+        background-color: white
+        border-radius: 100%
