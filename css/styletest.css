@@ -21,12 +21,43 @@ body {
 
   #cover > div {
     height: 50%; }
-
-  #photo {
-    width: 40%;
-    margin-top: 30%;
-    margin-left: 30%;
-    border-radius: 100%; } }
+  #cover #acphoto {
+    position: relative; }
+    #cover #acphoto #github {
+      left: calc(25% - 25px); }
+      #cover #acphoto #github a {
+        background: url("../image/githubgrey.png") center no-repeat; }
+    #cover #acphoto #linkedin {
+      left: calc(50% - 25px); }
+      #cover #acphoto #linkedin a {
+        background: url("../image/Linkedingrey.png") center no-repeat; }
+    #cover #acphoto #twitter {
+      left: calc(75% - 25px); }
+      #cover #acphoto #twitter a {
+        background: url("../image/twittergrey.png") center no-repeat; }
+    #cover #acphoto #photo {
+      width: 40%;
+      margin-top: 30%;
+      margin-left: 30%;
+      border-radius: 100%; }
+    #cover #acphoto .reseau {
+      height: 50px;
+      width: 50px;
+      position: absolute;
+      top: 120%;
+      transform-origin: 100% 50%;
+      z-index: 3; }
+      #cover #acphoto .reseau .bulle {
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        border-radius: 100%; }
+        #cover #acphoto .reseau .bulle a {
+          display: block;
+          height: 100%;
+          width: 100%;
+          border-radius: 100%;
+          background-size: 60% !important; } }
 @media screen and (min-width: 768px) {
   .navbar-nav > li {
     width: calc(100% / 6);
@@ -37,36 +68,53 @@ body {
 
   #acphoto {
     position: relative;
-    top: calc(50% - 75px);
-    left: calc(50% - 75px); }
+    top: calc(50% - 125px);
+    left: calc(50% - 125px); }
     #acphoto #photo {
-      width: 150px;
+      width: 250px;
       border-radius: 100%;
       z-index: 4;
       position: relative; }
+    #acphoto #github {
+      transform: rotate(0deg); }
+      #acphoto #github a {
+        background: url("../image/githubgrey.png") center no-repeat;
+        transform: rotate(0deg); }
+    #acphoto #linkedin {
+      transform: rotate(0deg); }
+      #acphoto #linkedin a {
+        background: url("../image/Linkedingrey.png") center no-repeat;
+        transform: rotate(0deg); }
+    #acphoto #twitter {
+      transform: rotate(0deg); }
+      #acphoto #twitter a {
+        background: url("../image/twittergrey.png") center no-repeat;
+        transform: rotate(0deg); }
     #acphoto .reseau {
-      height: 32px;
-      width: 150px;
-      position: relative;
-      top: 61px;
-      left: -50px;
+      height: 50px;
+      width: 250px;
+      position: absolute;
+      top: 100px;
+      left: -125px;
       transform-origin: 100% 50%;
-      z-index: 5; }
-    #acphoto .github {
-      transform: rotate(90deg); }
-      #acphoto .github .bar {
+      z-index: 3; }
+      #acphoto .reseau .bar {
         height: 3px;
-        width: calc(100% - 64px);
-        background-color: red;
-        position: relative;
-        top: 50%;
-        left: 32px;
-        z-index: 3; }
-      #acphoto .github .bulle {
-        height: 100%;
-        width: 32px;
+        width: calc(100% - 50px);
         background-color: white;
-        border-radius: 100%; } }
+        position: relative;
+        top: calc(50% - 1px);
+        left: 50px; }
+      #acphoto .reseau .bulle {
+        height: 100%;
+        width: 50px;
+        background-color: white;
+        border-radius: 100%; }
+        #acphoto .reseau .bulle a {
+          display: block;
+          height: 50px;
+          width: 50px;
+          border-radius: 100%; } }
 li {
   list-style: none; }
 
@@ -234,38 +282,32 @@ footer {
   position: absolute;
   width: 100%;
   height: 50px; }
-
-#twitter a {
-  position: absolute;
-  top: 12px;
-  left: calc(50% - 16px);
-  width: 32px;
-  height: 26px;
-  background-image: url("../image/twittergrey.png"); }
-
-#linkedin a {
-  position: absolute;
-  top: 9px;
-  left: calc(50% - 64px);
-  width: 32px;
-  height: 32px;
-  background-image: url("../image/Linkedingrey.png"); }
-
-#github a {
-  position: absolute;
-  top: 12px;
-  right: calc(50% - 64px);
-  width: 32px;
-  height: 25px;
-  background-image: url("../image/githubgrey.png"); }
-
-#twitter a:hover {
-  background-image: url("../image/twitter.png"); }
-
-#linkedin a:hover {
-  background-image: url("../image/Linkedin.png"); }
-
-#github a:hover {
-  background-image: url("../image/github.png"); }
+  footer #twitter a {
+    position: absolute;
+    top: 12px;
+    left: calc(50% - 16px);
+    width: 32px;
+    height: 26px;
+    background-image: url("../image/twittergrey.png"); }
+  footer #linkedin a {
+    position: absolute;
+    top: 9px;
+    left: calc(50% - 64px);
+    width: 32px;
+    height: 32px;
+    background-image: url("../image/Linkedingrey.png"); }
+  footer #github a {
+    position: absolute;
+    top: 12px;
+    right: calc(50% - 64px);
+    width: 32px;
+    height: 25px;
+    background-image: url("../image/githubgrey.png"); }
+  footer #twitter a:hover {
+    background-image: url("../image/twitter.png"); }
+  footer #linkedin a:hover {
+    background-image: url("../image/Linkedin.png"); }
+  footer #github a:hover {
+    background-image: url("../image/github.png"); }
 
 /*# sourceMappingURL=styletest.css.map */

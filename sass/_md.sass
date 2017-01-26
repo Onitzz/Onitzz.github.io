@@ -8,33 +8,50 @@
       height: 100%
   #acphoto
     position: relative
-    top: calc(50% - 75px)
-    left: calc(50% - 75px)
+    top: calc(50% - 125px)
+    left: calc(50% - 125px)
     #photo
-      width: 150px
+      width: 250px
       border-radius: 100%
       z-index: 4
       position: relative
+    #github
+      transform: rotate(0deg)
+      a
+        background: url('../image/githubgrey.png') center no-repeat
+        transform: rotate(0deg)
+    #linkedin
+      transform: rotate(0deg)
+      a
+        background: url('../image/Linkedingrey.png') center no-repeat
+        transform: rotate(0deg)
+    #twitter
+      transform: rotate(0deg)
+      a
+        background: url('../image/twittergrey.png') center no-repeat
+        transform: rotate(0deg)
     .reseau
-      height: 32px
-      width: 150px
-      position: relative
-      top: 61px
-      left: -50px
+      height: 50px
+      width: 250px
+      position: absolute
+      top: 100px
+      left: -125px
       transform-origin: 100% 50%
-      z-index: 5
-    .github
-      transform: rotate(90deg)
+      z-index: 3
       .bar
         height: 3px
-        width: calc(100% - 64px)
-        background-color: red
+        width: calc(100% - 50px)
+        background-color: white
         position: relative
-        top: 50%
-        left: 32px
-        z-index: 3
+        top: calc(50% - 1px)
+        left: 50px
       .bulle
         height: 100%
-        width: 32px
+        width: 50px
         background-color: white
         border-radius: 100%
+        a
+          display: block
+          height: 50px
+          width: 50px
+          border-radius: 100%
