@@ -48,8 +48,7 @@ if (window.matchMedia("(min-width: 768px)").matches) {
   rotate('twitter',rotateTwitter);
   rotate('github',rotateGithub);
   rotate('linkedin',rotateLinkedin);
-  document.onmousemove = suitsouris;
-  function suitsouris(evenement) {
+  document.onmousemove = function(evenement) {
           if(navigator.appName=="Microsoft Internet Explorer")
           {
                   var x = event.x+document.body.scrollLeft;
