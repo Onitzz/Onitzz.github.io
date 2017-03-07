@@ -39,7 +39,8 @@ body {
       width: 40%;
       margin-top: 30%;
       margin-left: 30%;
-      border-radius: 100%; }
+      border-radius: 100%;
+      z-index: 20; }
     #cover #acphoto .reseau {
       height: 50px;
       width: 50px;
@@ -69,11 +70,12 @@ body {
   #acphoto {
     position: relative;
     top: calc(50% - 125px);
-    left: calc(50% - 125px); }
+    left: calc(50% - 125px);
+    z-index: 25; }
     #acphoto #photo {
       width: 250px;
       border-radius: 100%;
-      z-index: 4;
+      z-index: 20;
       position: relative; }
     #acphoto #github {
       transform: rotate(0deg); }
@@ -149,7 +151,7 @@ h1 {
 
 /* ACCUEIL */
 #accueil {
-  background: #061015 url("../image/image-fond-cover.jpg") center center no-repeat fixed;
+  background: #061015 url("../image/pattern.png") center center no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -163,9 +165,7 @@ h1 {
     height: 100%;
     min-height: 350px;
     width: 100%;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#061015+0,061015+70,000000+100&1+42,0.92+57,0.73+72,0.46+86,0+100 */
-    background: rgba(14, 15, 15, 0.98);
-    z-index: 2;
+    z-index: 17;
     vertical-align: top; }
     #accueil #cover p {
       color: white;
@@ -176,6 +176,8 @@ h1 {
       position: absolute;
       bottom: calc(50% - 15vw);
       margin: auto; }
+      #accueil #cover #titre h1 {
+        margin: 0; }
       #accueil #cover #titre p {
         color: #818181;
         font-family: "VT323", monospace;

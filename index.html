@@ -8,8 +8,11 @@
 		<link href="https://fonts.googleapis.com/css?family=Dosis|Pacifico" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
 		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
-		<link rel="stylesheet" href="css/styletest.css"/>
+		<link rel="stylesheet" href="css/style.css"/>
 		<link rel="icon" type="image/x-icon" href="image/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
 	</head>
 	<body>
 		<nav class="navbar navbar-default navbar-fixed-top">
@@ -27,18 +30,21 @@
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li><a href="">Accueil</a></li>
-						<li><a href="#section_formation">Apprentissage</a></li>
-						<li><a href="#section_experiencepro">Expériences</a></li>
-						<li><a href="#section_competence">Compétences</a></li>
-						<li><a href="#section_passion">Intérêts</a></li>
-						<li><a href="#section_contact">Contact</a></li>
+						<li><a class="smoth-scroll" href="#cover">Accueil</a></li>
+						<li><a class="smoth-scroll" href="#section_competence">Compétences</a></li>
+						<li><a class="smoth-scroll" href="#section_experiencepro">Expériences</a></li>
+						<li><a class="smoth-scroll" href="#section_formation">Apprentissage</a></li>
+						<li><a class="smoth-scroll" href="#section_passion">Intérêts</a></li>
+						<li><a class="smoth-scroll" href="#section_contact">Contact</a></li>
 					</ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
 
 		<div class="container-fluid" id="accueil">
+			<div id="large-header" class="large-header">
+				<canvas id="demo-canvas"></canvas>
+			</div>
 			<div id="cover" class="row">
 				<div class="col-sm-6">
 					<div id="acphoto">
@@ -74,6 +80,110 @@
 				</div>
 			</div>
 		</div>
+
+		<section id="section_competence">
+			<header>
+				<h1>Mes compétences</h1>
+			</header>
+			<article class="container-fluid">
+				<div id="container_competences" class="row">
+					<div class="col-md-4 col-sm-6">
+						<div class="comp">
+							<div class="row">
+								<h3 class="text-center">FrontEnd</h3>
+							</div>
+							<ul class="row">
+								<li class="col-xs-6 col-sm-4"><img class="center-block" src="image/html.png" alt="logo html"/><p class="text-center">HTML</p></li>
+								<li class="col-xs-6 col-sm-4"><img class="center-block" src="image/css.png" alt="logo Css"/><p class="text-center">CSS</p></li>
+								<li class="col-xs-6 col-sm-4"><img class="center-block" src="image/boostra.png" alt="logo bootstrap"/><p class="text-center">Bootstrap</p></li>
+								<li class="col-xs-6 col-sm-4"><img class="center-block" src="image/js.png" alt="logo javascript"/><p class="text-center">JavaScript</p></li>
+								<li class="col-xs-6 col-sm-4"><img class="center-block" src="image/jquery.png" alt="logo Jquery"/><p class="text-center">JQuery</p></li>
+								<li class="col-xs-6 col-sm-4"><img class="center-block" src="image/react.png" alt="logo react"/><p class="text-center">React Native</p></li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="comp">
+							<div class="row">
+								<h3 class="text-center">BackEnd</h3>
+							</div>
+							<ul class="row">
+								<li class="col-xs-6 col-sm-6"><img class="center-block" src="image/php.png" alt="logo php"/><p class="text-center">PHP</p></li>
+								<li class="col-xs-6 col-sm-6"><img class="center-block" src="image/symfony.svg" alt="logo symfony"/><p class="text-center">Symfony</p></li>
+								<li class="col-xs-6 col-sm-6"><img class="center-block" src="image/silex.png" alt="logo silex"/><p class="text-center">Silex</p></li>
+								<li class="col-xs-6 col-sm-6"><img class="center-block" src="image/mysql.png" alt="logo mysql"/><p class="text-center">MySQL</p></li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="comp">
+							<div class="row">
+								<h3 class="text-center">OS</h3>
+							</div>
+							<ul class="row">
+								<li class="col-xs-6 col-sm-6"><img class="center-block" src="image/debian.png" alt="logo debian"/><p class="text-center">Debian</p></li>
+								<li class="col-xs-6 col-sm-6"><img class="center-block" src="image/ubuntu.png" alt="logo ubuntu"/><p class="text-center">Ubuntu</p></li>
+								<li class="col-xs-6 col-sm-12"><img class="center-block" src="image/windows.png" alt="logo windows"/><p class="text-center">Windows</p></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="comp">
+							<div class="row">
+								<h3 class="text-center">Logiciel</h3>
+							</div>
+							<ul class="row">
+								<li class="col-xs-6 col-sm-6"><img class="center-block" src="image/wordpress.png" alt="logo Wordpress"/><p class="text-center">Wordpress</p></li>
+								<li class="col-xs-6 col-sm-6"><img class="center-block" src="image/drupal.png" alt="logo Drupal"/><p class="text-center">Drupal</p></li>
+								<li class="col-xs-6 col-sm-12"><img class="center-block" src="image/prestashop.png" alt="logo Prestashop"/><p class="text-center">Prestashop</p></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="comp">
+							<div class="row">
+								<h3 class="text-center">Outil</h3>
+							</div>
+							<ul class="row">
+								<li class="col-xs-6 col-sm-6"><img class="center-block" src="image/git.png" alt="logo Git"/><p class="text-center">Git</p></li>
+								<li class="col-xs-6 col-sm-6"><img class="center-block" src="image/octocat.png" alt="logo Github"/><p class="text-center">Github</p></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+		<section id="section_experiencepro">
+			<header>
+				<h1>Mes expériences professionnelles</h1>
+			</header>
+			<article class="container">
+				<div class="row">
+					<div class="exp col-sm-4">
+						<h3>Mission de service civique</h3>
+						<span>Mai 2016 / Novembre 2016</span>
+						<h4>Pôle Emploi de Lens Zola</h4>
+						<p>Accueil et aide numérique aux demandeurs d'emploi (aides aux bornes numérique, animation d'atelier de création de CV, de découverte de l'espace personnel et du site Emploi Store).</p>
+					</div>
+					<div class="exp col-sm-4">
+						<h3>Réparateur, revendeur</h3>
+						<span>Novembre 2014 / Janvier 2016</span>
+						<h4>Auto-entrepreneur</h4>
+						<p>Récupération de palette chez particulier et professionnel, réparation et revente chez grossiste.</p>
+					</div>
+					<div class="exp col-sm-4">
+						<h3>Stagiaire développeur web</h3>
+						<span>Janvier 2014 / Mars 2014</span>
+						<h4>Arobase Iris (@Iris)</h4>
+						<p>Création d'un projet, du cahier des charges à la mise en ligne en passant par le développement.</p>
+						<p>Création d'un script de migration automatique de base de données.</p>
+						</ul>
+					</div>
+				</div>
+			</article>
+		</section>
 		<section id="section_formation">
 			<header>
 				<h1>Mon apprentissage</h1>
@@ -128,83 +238,6 @@
 						<li>Front-end</li>
 						<li>Back-end</li>
 					</ul>
-				</div>
-			</article>
-		</section>
-		<section id="section_experiencepro">
-			<header>
-				<h1>Mes expériences professionnelles</h1>
-			</header>
-			<article class="container">
-				<div class="row">
-					<div class="exp col-sm-4">
-						<h3>Mission de service civique</h3>
-						<span>Mai 2016 / Novembre 2016</span>
-						<h4>Pôle Emploi de Lens Zola</h4>
-						<p>Accueil et aide numérique aux demandeurs d'emploi (aides aux bornes numérique, animation d'atelier de création de CV, de découverte de l'espace personnel et du site Emploi Store).</p>
-					</div>
-					<div class="exp col-sm-4">
-						<h3>Réparateur, revendeur</h3>
-						<span>Novembre 2014 / Janvier 2016</span>
-						<h4>Auto-entrepreneur</h4>
-						<p>Récupération de palette chez particulier et professionnel, réparation et revente chez grossiste.</p>
-					</div>
-					<div class="exp col-sm-4">
-						<h3>Stagiaire développeur web</h3>
-						<span>Janvier 2014 / Mars 2014</span>
-						<h4>Arobase Iris (@Iris)</h4>
-						<p>Création d'un projet, du cahier des charges à la mise en ligne en passant par le développement.</p>
-						<p>Création d'un script de migration automatique de base de données.</p>
-						</ul>
-					</div>
-				</div>
-			</article>
-		</section>
-		<section id="section_competence">
-			<header>
-				<h1>Mes compétences</h1>
-			</header>
-			<article class="container-fluid">
-				<div id="container_competences" class="row">
-					<div class="col-md-4 col-sm-6">
-						<div class="comp">
-							<div class="row">
-								<h3 class="text-center">Langage</h3>
-							</div>
-							<ul class="row">
-								<li class="col-xs-6 col-sm-4"><img class="center-block" src="image/html.png" alt="logo html"/><p class="text-center">HTML</p></li>
-								<li class="col-xs-6 col-sm-4"><img class="center-block" src="image/css.png" alt="logo Css"/><p class="text-center">CSS</p></li>
-								<li class="col-xs-6 col-sm-4"><img class="center-block" src="image/js.png" alt="logo javascript"/><p class="text-center">JavaScript</p></li>
-								<li class="col-xs-6 col-sm-6"><img class="center-block" src="image/php.png" alt="logo php"/><p class="text-center">PHP</p></li>
-								<li class="col-xs-12 col-sm-6"><img class="center-block" src="image/ruby.png" alt="logo ruby"/><p class="text-center">Ruby</p></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="comp">
-							<div class="row">
-								<h3 class="text-center">Framework et logiciel</h3>
-							</div>
-							<ul class="row">
-								<li class="col-xs-6 col-sm-4"><img class="center-block" src="image/boostra.png" alt="logo bootstrap"/><p class="text-center">Bootstrap</p></li>
-								<li class="col-xs-6 col-sm-4"><img class="center-block" src="image/jquery.png" alt="logo Jquery"/><p class="text-center">JQuery</p></li>
-								<li class="col-xs-6 col-sm-4"><img class="center-block" src="image/git.png" alt="logo Git"/><p class="text-center">Git</p></li>
-								<li class="col-xs-6 col-sm-6"><img class="center-block" src="image/Sass.png" alt="logo sass"/><p class="text-center">Sass</p></li>
-								<li class="col-xs-12 col-sm-6"><img class="center-block" src="image/rubyandrail.png" alt="logo Ruby and rails"/><p class="text-center">Ruby & Rails</p></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="comp">
-							<div class="row">
-								<h3 class="text-center">Autre</h3>
-							</div>
-							<ul class="row">
-								<li class="col-xs-6 col-sm-6"><img class="center-block" src="image/debian.png" alt="logo debian"/><p class="text-center">Debian</p></li>
-								<li class="col-xs-6 col-sm-6"><img class="center-block" src="image/windows.png" alt="logo windows"/><p class="text-center">Windows</p></li>
-							</ul>
-						</div>
-					</div>
 				</div>
 			</article>
 		</section>
@@ -274,6 +307,9 @@
 
 		<!-- Latest compiled JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="js/TweenLite.min.js"></script>
+		<script src="js/EasePack.min.js"></script>
+		<script src="js/rAF.js"></script>
 
 		<script src="js/code.js"></script>
 
